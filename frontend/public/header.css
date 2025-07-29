@@ -1,0 +1,159 @@
+#navbar .btn-custom {
+  background-color: #f3f6f8f3;
+  border:blue;
+  font-Family: 'Poppins, sans-serif',
+}
+
+#navbar .btn-custom:hover {
+  background-color: #cdc2a4;
+}
+
+/* Step1form.css */
+
+#step1 .row {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+#step1 .col-md-6 {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  
+}
+
+#step1 .col-md-8 {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  
+}
+#step1 .col-md-12 {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  
+}
+
+
+#step1 .next-btn {
+  background-color:#d7b54ff4;
+  font-weight: 500;
+  padding: 10px 30px;
+  border-radius: 8px;
+  border-color: black;
+}
+
+#step1 .next-btn:hover {
+  background-color: #9e7445;
+}
+
+#login .col-md-6 {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  
+}
+
+#login .next-btn {
+  background-color:#d7b54ff4;
+  font-weight: 500;
+  padding: 10px 30px;
+  border-radius: 8px;
+  border-color: black;
+}
+
+#login .next-btn:hover {
+  background-color: #9e7445;
+}
+#login h2{
+    text-align: center;
+}
+#login #loginrow{
+    display: flex;
+    align-items: center;
+    height: 500px;
+}
+#step1 #loginrow{
+    display: flex;
+    align-items: center;
+    height: 400px;
+}
+
+/* Keep your existing CSS for #navbar, #step1, #login, etc. */
+
+/* New/Modified CSS for the Modal */
+
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it's on top of other content */
+    padding: 20px; /* Add some padding for smaller screens */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+}
+
+/* We'll apply most of the styling directly to the section/column classes. */
+/* This custom class is just for specific modal adjustments. */
+.modal-content-custom {
+    position: relative; /* For positioning the close button */
+    /* Override Bootstrap's default max-width if necessary, or let it handle it */
+    max-width: 500px; /* Adjust this to control the max width of your modal */
+    width: 100%; /* Ensure it takes full width up to max-width */
+    animation: fadeIn 0.3s ease-out; /* Simple fade-in animation */
+    /* Optional: If you want a slightly different shadow for the modal than your form */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+.modal-close-button {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #888;
+    transition: color 0.2s;
+    z-index: 1; /* Ensure button is clickable */
+}
+
+.modal-close-button:hover {
+    color: #333;
+}
+
+.modal-title {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #4a4a4a; /* A slightly darker grey for titles */
+}
+
+/* Optional: Animation for the modal */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
