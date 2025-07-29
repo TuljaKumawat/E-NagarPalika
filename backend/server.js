@@ -11,7 +11,7 @@ const userrouter = require('./router/userrouter')
 const corsOptions = {
     origin: [
         'http://localhost:3000', // स्थानीय विकास के लिए
-        'https://e-nagarpalika-frontend.onrender.com' // आपके डिप्लॉयड फ्रंटएंड का URL
+        'https://e-nagarpalika-cpuc.onrender.com' // आपके डिप्लॉयड फ्रंटएंड का URL
     ],
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true, // यदि आप कुकीज़ या ऑथराइजेशन हेडर भेज रहे हैं
